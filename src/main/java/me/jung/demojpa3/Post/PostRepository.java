@@ -1,7 +1,7 @@
 package me.jung.demojpa3.Post;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import me.jung.demojpa3.MyRepository;
 
-public interface PostRepository extends JpaRepository<Post, Long> {
+public interface PostRepository extends MyRepository<Post, Long>, PostCustomRepository {
 
 }
